@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 decoder</title>
+</head>
+
+<body>
+    <h1>Decode Base64 here!!</h1>
+		<form action="{{ url_for('plaintext') }}" method="POST">
+    	<label for="encrypted_string">Encrypted string: </label>
+    	<input type="text" id="encrypted_string" name="encrypted_string" placeholder="Enter base64 string"><br>
+    <button id="submit" class="submit" type="submit">Submit</button>
+		</form>
+		<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
